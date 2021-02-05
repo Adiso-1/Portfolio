@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bungee+Inline&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&family=Staatliches&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+      integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" media="screen and (max-width:768px)" href="css/mobile.css" />
+    <title>Adi Levy Portfolio</title>
+  </head>
+  <body>
+    <div id="home">
+      <header>
+        <nav id="main-nav">
+          <ul class="navbar">
+            <li class="name">
+              <i class="fas fa-chevron-left fa-2x"></i>
+              <h1><a href="index.html">Adi Levy</a></h1>
+              <i class="fas fa-slash fa-1x"></i>
+              <i class="fas fa-chevron-right fa-2x"></i>
+              <i class="fas fa-circle"></i>
+            </li>
+            <li class="social">
+              <a href=""><i class="fab fa-facebook fa-2x"></i></a>
+              <a href=""><i class="fab fa-github fa-2x"></i></a>
+              <a href=""><i class="fab fa-linkedin fa-2x"></i></a>
+            </li>
+            <li class="info">
+                <div class="home"><a href="#home">Home</a></div>
+                <div class="projects"><a href="#projects">Projects</a></div>
+                <div class="contact"><a href="#contact">Contact</a></div>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      
+      <section class="section">
+        <div class="section-container">
+          <div class="introduction">
+            <h1>
+              Hi, I'm Adi Levy I Am A Programmer & Investor. <br />Will Never
+              Stop Learn Code & Cook <i class="fas fa-pizza-slice"></i>
+            </h1>
+            <div  class="more-on-me">
+              <ul>Some Buzz Words:
+                <li>Bachlor Degree In Economic & Management.</li>
+                <li>Loves To Pose New Challenges.</li>
+                <li>HTML5, CSS3, JS.</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <footer class="main-footer">
+          <h1>See Some Of My Projects</h1>
+          <a href="#projects"><i class="fas fa-chevron-right fa-3x"></i></a>
+        </footer>
+      </div>
+<!-- ===============Projects========================================================= -->
+      <div id="projects">
+        <header class="projects-header">
+          <h1 class="works">Works<i class="fas fa-circle"></i></h1>
+          <div class="grid-projects">
+            <div class="project-container">
+              <h1>NewsGrid Website</h1>
+              <a href="https://newsgrid-adi.netlify.app" target="_blank" class="project newsgrid"></a>
+            </div>
+            <div class="project-container">
+              <h1>Tesla Model 3</h1>
+              <a href="https://github.com/Adiso-1/Tesla-model-3-website" target="_blank" class="project tesla"></a>
+            </div>
+            <div class="project-container">
+              <h1>EdgeLedger</h1>
+              <a href="https://edgeledger-adi.netlify.app" target="_blank" class="project edge"></a>
+            </div>
+            <div class="project-container">
+              <h1>Hotel-BT</h1>
+              <a href="https://hotel-bt-adi.netlify.app/" target="_blank" class="project hotel-bt"></a>
+            </div>
+            <div class="project-container">
+              <h1>JS-Budget-Calculator</h1>
+              <a href="https://budget-calculator-adi.netlify.app/" target="_blank" class="project budget-calc"></a>
+            </div>        
+          </header>
+          <footer class="main-footer">
+            <h1>Contact Me</h1>
+            <a href="#contact"><i class="fas fa-chevron-right fa-3x"></i></a>
+          </footer>
+        </div>
+        <!-- ===============Contact========================================================= -->
+        <div id="contact">
+          <div class="contact-container">
+            <form>
+              <label for="fname">First Name</label>
+              <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+              <label for="lname">Last Name</label>
+              <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+              <label for="country">Country</label>
+              <select id="country" name="country">
+                <option value="australia">Australia</option>
+                <option value="canada">Canada</option>
+                <option value="usa">USA</option>
+              </select>
+
+              <label for="subject">Subject</label>
+              <textarea id="subject" name="subject" placeholder="Write something.." style="height:100px"></textarea>
+
+              <input type="submit" value="Submit">
+            </form>
+              
+          </div>
+        </div>
+  </body>
+</html>
+      
