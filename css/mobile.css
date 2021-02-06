@@ -13,6 +13,24 @@
   opacity: 0.4;
   animation: main-photo 1s ease;
 }
+#hello .first-row {
+  position: relative;
+  animation: click-me 5s infinite 1s linear;
+}
+@keyframes click-me {
+  45% {
+    transform: rotate(0deg);
+  }
+  46% {
+    transform: rotate(5deg);
+  }
+  47% {
+    transform: rotate(-5deg);
+  }
+  48% {
+    transform: rotate(0);
+  }
+}
 .row {
   margin-bottom: 2rem;
   font-size: 7rem;
@@ -52,20 +70,20 @@
   }
   #hello .first-row {
     position: relative;
-    content: "";
+    animation: click-me 5s infinite 1s linear;
   }
-  #hello .first-row::after {
-    position: absolute;
-    content: "←";
-    left: 110%;
-    animation: arrow 10s ease;
-  }
-  @keyframes arrow {
-    0% {
-      transform: translateX(1000px);
+  @keyframes click-me {
+    45% {
+      transform: rotate(0deg);
     }
-    100% {
-      transform: translateX(0px);
+    46% {
+      transform: rotate(5deg);
+    }
+    47% {
+      transform: rotate(-5deg);
+    }
+    48% {
+      transform: rotate(0);
     }
   }
   .row {
@@ -94,5 +112,19 @@
   }
   #projects {
     height: auto;
+  }
+  /* ======================Contacts========================= */
+  #contact .contact-container form {
+    font-family: sans-serif;
+    max-width: 350px;
+    padding: 10px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    background: var(--light-color);
+    border-radius: 10px;
   }
 }
