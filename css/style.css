@@ -344,29 +344,50 @@ p {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  background: url(../img/red-circle.png) no-repeat center center/cover;
 }
 
 #contact .contact-container form {
-  max-width: 1100px;
+  font-family: sans-serif;
+  max-width: 600px;
+  padding: 1rem;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   font-size: 2rem;
   color: var(--primary-color);
-  background: var(--secondary-color);
+  background: var(--light-color);
+  border-radius: 10px;
 }
+
 #contact .contact-container label {
   padding-bottom: 10px;
 }
-#contact .contact-container form input {
-  text-decoration: none;
-  padding: 1rem;
-  margin-bottom: 10px;
+#contact .contact-container form input,
+#contact .contact-container form textarea {
+  width: 80%;
+  padding: 10px 0;
+  font-size: 16px;
+  color: var(--dark-color);
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid var(--primary-color);
+  outline: none;
+  background: transparent;
 }
-input[type="submit"] {
-  background: var(--primary-color);
+#contact .contact-container form input[type="submit"] {
+  font-size: 20px;
+  margin-left: 1rem;
+  border: 3px solid var(--primary-color);
+  color: var(--primary-color);
+  background: var(--light-color);
+  font-family: "Bungee Inline", cursive;
+  width: 50%;
+  text-align: center;
+  margin: 0 auto;
+}
+#contact .contact-container form input[type="submit"]:hover {
   color: var(--light-color);
-  font-size: 1.5rem;
-  font-weight: bold;
+  background: var(--primary-color);
 }
