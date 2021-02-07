@@ -68,10 +68,7 @@ p {
   z-index: 1;
 }
 #hello .home-photo img {
-  position: absolute;
   width: 600px;
-  top: 20vh;
-  right: 0;
   opacity: 0.4;
   animation: main-photo 1s ease;
 }
@@ -250,7 +247,6 @@ p {
   justify-content: center;
   text-align: center;
   background: var(--dark-color);
-  border-bottom: 1px dotted var(--light-color);
 }
 .main-footer h1 {
   color: var(--light-color);
@@ -282,7 +278,6 @@ p {
 }
 /* ===============================Projects================================================ */
 #projects {
-  height: 100vh;
   display: flex;
   flex-direction: column;
 }
